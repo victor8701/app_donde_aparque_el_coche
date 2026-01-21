@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+server/node_modules
+server/.env
+.DS_Store
+Thumbs.db
+
