@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Dónde Aparqué?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>¿Dónde Aparqué?</h1>
+            <p class="subtitle">Gestión de coche compartido</p>
+        </header>
+
+        <main>
+            <!-- Tarjeta de Estado Actual -->
+            <div class="card status-card">
+                <div class="status-header">
+                    <span class="status-label">Ubicación Actual</span>
+                    <span class="status-time" id="lastUpdated">--:--</span>
+                </div>
+                <h2 id="currentLocation">Cargando...</h2>
+                <div class="user-info">
+                    <span class="icon">👤</span>
+                    <span id="parkedBy">...</span>
+                </div>
+            </div>
+
+            <!-- Selección de Usuario -->
+            <div class="section-title">¿Quién eres?</div>
+            <div class="user-selector" id="userSelector">
+                <button class="user-btn" data-user="Víctor">
+                    <span class="user-emoji">👨‍💻</span> Víctor
+                </button>
+                <button class="user-btn" data-user="Celia">
+                    <span class="user-emoji">👩‍⚕️</span> Celia
+                </button>
+                <button class="user-btn" data-user="Chema">
+                    <span class="user-emoji">👮‍♂️</span> Chema
+                </button>
+                <button class="user-btn" data-user="Yoli">
+                    <span class="user-emoji">👩‍🏫</span> Yoli
+                </button>
+            </div>
+
+            <!-- Acción de Aparcar -->
+            <div class="action-section">
+
+                <div class="section-title">Actualizar ubicación</div>
+                <div class="location-grid">
+                    <button class="location-btn" data-loc="Óbolo (farmacia)">
+                        <span class="emoji">💊</span>
+                        <span>Óbolo (farmacia)</span>
+                    </button>
+                    <button class="location-btn" data-loc="Óbolo (guardería)">
+                        <span class="emoji">🧸</span>
+                        <span>Óbolo (guardería)</span>
+                    </button>
+                    <button class="location-btn" data-loc="C/ Dobla">
+                        <span class="emoji">📍</span>
+                        <span>C/ Dobla</span>
+                    </button>
+                    <button class="location-btn" data-loc="Petroprix">
+                        <span class="emoji">⛽</span>
+                        <span>Petroprix</span>
+                    </button>
+                    <button class="location-btn" data-loc="Ballenoil">
+                        <span class="emoji">⛽</span>
+                        <span>Ballenoil</span>
+                    </button>
+                    <button class="location-btn" data-loc="Mercadona">
+                        <span class="emoji">🛒</span>
+                        <span>Mercadona</span>
+                    </button>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="newLocationInput" placeholder="¿Dónde lo has dejado?">
+                </div>
+                <button id="parkBtn" class="primary-btn" disabled>
+                    <span class="btn-icon">🅿️</span>
+                    <span>He Aparcado Aquí</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Notificaciones -->
+        <div id="toast" class="toast hidden">
+            <span id="toastMessage">Mensaje</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

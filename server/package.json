@@ -1,0 +1,20 @@
+{
+  "name": "donde-aparque-el-coche-server",
+  "version": "1.0.0",
+  "description": "Servidor backend para la app de coche compartido",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "parking",
+    "shared-car"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^9.1.5"
+  }
+}
