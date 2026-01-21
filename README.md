@@ -2,8 +2,6 @@
 
 Aplicación completa para gestionar la ubicación del coche compartido entre amigos/familia. Permite guardar quién aparcó, dónde y cuándo, sincronizándose en tiempo real entre todos los dispositivos.
 
-![Screenshots](https://i.imgur.com/PLACEHOLDER.png)
-
 ## 🏗️ Arquitectura
 
 El proyecto consta de tres partes:
